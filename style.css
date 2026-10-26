@@ -1,0 +1,170 @@
+
+/* Configuración general */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f7fb;
+    color: #1e293b;
+}
+
+.contenedor {
+    width: 90%;
+    max-width: 1400px;
+    margin: 40px auto;
+}
+
+/* Cabecera */
+.cabecera {
+    margin-bottom: 30px;
+}
+
+.subtitulo {
+    color: #2563eb;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.cabecera h1 {
+    margin: 8px 0;
+    font-size: 32px;
+}
+
+.descripcion {
+    color: #64748b;
+    margin: 0;
+}
+
+/* Estadísticas */
+.estadisticas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.tarjeta {
+    background-color: white;
+    padding: 22px;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+}
+
+.tarjeta h2 {
+    margin: 0 0 12px;
+    font-size: 15px;
+    color: #64748b;
+}
+
+.tarjeta p {
+    margin: 0;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+/* Panel de la tabla */
+.panel {
+    background-color: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.panel-cabecera {
+    padding: 22px;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.panel-cabecera h2 {
+    margin: 0 0 8px;
+    font-size: 20px;
+}
+
+.panel-cabecera p {
+    margin: 0;
+    color: #64748b;
+    font-size: 14px;
+}
+
+.tabla-contenedor {
+    overflow-x: auto;
+}
+/* Tabla */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    white-space: nowrap;
+}
+
+thead {
+    background-color: #f8fafc;
+}
+
+th {
+    padding: 15px 18px;
+    color: #64748b;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+td {
+    padding: 16px 18px;
+    border-top: 1px solid #e2e8f0;
+    font-size: 14px;
+}
+
+tbody tr:hover {
+    background-color: #f8fafc;
+}
+
+/* Botones */
+button {
+    padding: 9px 13px;
+    border: none;
+    border-radius: 7px;
+    background-color: #2563eb;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+button:hover:not(:disabled) {
+    background-color: #1d4ed8;
+}
+
+button:disabled {
+    background-color: #e2e8f0;
+    color: #64748b;
+    cursor: not-allowed;
+}
+
+/* Etiquetas de estado */
+[class^="estado-"] {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.estado-pendiente {
+    background-color: #fef3c7;
+    color: #92400e;
+}
+
+.estado-en-curso {
+    background-color: #dbeafe;
+    color: #1d4ed8;
+}
+
+.estado-resuelto {
+    background-color: #dcfce7;
+    color: #166534;
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestor IT</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<body>
+    <main class="contenedor">
+        <header class="cabecera">
+            <div>
+                <p class="subtitulo">SOPORTE TÉCNICO</p>
+                <h1>Gestor de incidencias</h1>
+                <p class="descripcion">Administra y supervisa las incidencias informáticas.</p>
+            </div>
+        </header>
+
+        <section class="estadisticas">
+            <article class="tarjeta">
+                <h2>Pendientes</h2>
+                <p id="pendientes">0</p>
+            </article>
+
+            <article class="tarjeta">
+                <h2>En curso</h2>
+                <p id="encurso">0</p>
+            </article>
+
+            <article class="tarjeta">
+                <h2>Resueltas</h2>
+                <p id="resueltas">0</p>
+            </article>
+        </section>
+
+        <section class="panel">
+            <div class="panel-cabecera">
+                <div>
+                    <h2>Listado de incidencias</h2>
+                    <p>Consulta el estado de las solicitudes de soporte.</p>
+                </div>
+            </div>
+
+            <div class="tabla-contenedor">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Título</th>
+                            <th>Departamento</th>
+                            <th>Prioridad</th>
+                            <th>Estado</th>
+                            <th>Técnico</th>
+                            <th>Fecha</th>
+                            <th>Acción</th>
+                        </tr>
+                    </thead>
+                    <tbody id="mostrarIncidencias"></tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</body>
+</html>
