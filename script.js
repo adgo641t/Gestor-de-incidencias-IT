@@ -100,6 +100,16 @@ function contadorIncidencias(incidencias) {
     pcurso.innerHTML = "Hay " + encurso+ " tareas en curso";
 
 }
+document.getElementById("input_busc").addEventListener("input",(e) => {
+    const texto = e.target.value.toLowerCase();
+
+    const filtrado = incidencias.filter((inc) => 
+        inc.titulo.toLowerCase().includes(texto) || 
+        inc.departamento.toLowerCase().includes(texto) || 
+        inc.tecnico && inc.tecnico.toLowerCase().includes(texto));
+
+    renderIncidencias(filtrado);
+})
 contadorIncidencias(incidencias);
 
 renderIncidencias(incidencias);

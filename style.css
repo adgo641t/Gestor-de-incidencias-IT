@@ -168,3 +168,6 @@ button:disabled {
     background-color: #dcfce7;
     color: #166534;
 }
+.input_busc {
+    border-radius:2px ;
+}
